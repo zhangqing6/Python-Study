@@ -1,0 +1,8 @@
+操作	功能
+文件对象 = open (file, mode, encoding)	打开文件获得文件对象
+文件对象.read (num)	读取指定长度字节不指定 num 读取文件全部
+文件对象.readline ()	读取一行
+文件对象.readlines ()	读取全部行，得到列表
+for line in 文件对象	for 循环文件行，一次循环得到一行数据
+文件对象.close ()	关闭文件对象
+with open() as f	通过 with open 语法打开文件，可以自动关闭

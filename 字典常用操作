@@ -1,0 +1,7 @@
+编号	操作	说明
+1	字典 [Key]	获取指定 Key 对应的 Value 值
+2	字典 [Key] = Value	添加或更新键值对
+3	字典.pop (Key)	取出 Key 对应的 Value 并在字典内删除此 Key 的键值对
+4	字典.clear ()	清空字典
+5	字典.keys ()	获取字典的全部 Key，可用于 for 循环遍历字典
+6	len (字典)	计算字典内的元素数量

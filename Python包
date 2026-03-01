@@ -1,0 +1,12 @@
+在Python程序的生态中，有许多非常多的第三方包（非Python官方），可以极大的帮助我们提高开发效率，如：
+ 
+- 科学计算中常用的：numpy包
+​
+- 数据分析中常用的：pandas包
+​
+- 大数据计算中常用的：pyspark、apache-flink包
+​
+- 图形可视化常用的：matplotlib、pyecharts
+​
+- 人工智能常用的：tensorflow
+在终端通过pip install指令即可下载安装

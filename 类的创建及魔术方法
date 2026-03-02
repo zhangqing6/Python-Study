@@ -7,5 +7,12 @@ class Student:
      self.age=age
     def __str__(self):
      return f'{self.name} {self.gender} {self.nationality} {self.native_place}'
-stu_1=Student("小明","男","中国","湖南省",20)
+    def __le__(self, other):
+        return self.age <= other.age
+    def __eq__(self, other):
+        return self.age == other.age
+stu_1=Student("小明","男","中国","湖南省",11)
+stu_2=Student("小钰","男","中国","湖南省",11)
 print(stu_1)
+print(stu_2<=stu_1)
+print(stu_1==stu_2)

@@ -1,19 +1,11 @@
 class Student:
-    name=None
-    gender=None
-    nationality=None
-    native_place=None
-    age=None
     def __init__(self,name,gender,nationality,native_place,age):
      self.name=name
      self.gender=gender
      self.nationality=nationality
      self.native_place=native_place
      self.age=age
-
+    def __str__(self):
+     return f'{self.name} {self.gender} {self.nationality} {self.native_place}'
 stu_1=Student("小明","男","中国","湖南省",20)
-print(stu_1.name)
-print(stu_1.gender)
-print(stu_1.nationality)
-print(stu_1.native_place)
-print(stu_1.age)
+print(stu_1)

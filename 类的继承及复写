@@ -1,0 +1,14 @@
+class Phone:
+    producer="华为"
+    def call_by_5g(self):
+        print("正在进行5G通话")
+class Newphone(Phone):
+    producer="Honor"
+    def call_by_5g(self):
+        print("开启CPU单核模式，确保省电")
+        Phone.call_by_5g(self)
+        super().call_by_5g()
+        # 也可用super().call_by_5g来实现父类的调用
+        print("关闭CPU单核模式，确保性能")
+myphone=Newphone()
+myphone.call_by_5g()

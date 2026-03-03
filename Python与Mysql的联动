@@ -5,17 +5,21 @@ conn=Connection(
     port=3306,
     user='root',
     password='123456',
+    autocommit=True # 自动提交
 )
 cursor=conn.cursor()   # 获取游标对象
 # # 选择数据库
 conn.select_db('library_management')
-# # 执行sql
-# cursor.execute("create table test_pymysql (id int);")
-# # 查看是否连接成功
-# print(conn.get_server_info())
+ # 执行sql
+cursor.execute("create table test_pymysql (id int);")
+# 查看是否连接成功
+print(conn.get_server_info())
 cursor.execute("select * from student")
 results=cursor.fetchall()
 print(results)
 for r in results:
     print(r)
+cursor.execute("insert into student values(4,'林俊杰',45,'男')")
+# conn.commit()
 conn.close()
+

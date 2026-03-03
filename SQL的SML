@@ -4,15 +4,20 @@ use library_management;
 
 show tables;
 
-create table studet(
+create table student(
      id int,
      name varchar(10),
-     age int
+     age int,
+     gender varchar(2)
 );
+drop table student;
 
-insert into studet(id) values(1),(2),(3);
-insert into studet(id,name,age) values(1,'周杰伦',40),(2,'林俊杰',48),(3,'陶喆',49);
-delete from studet where age< 45;
-update studet set id=4 where name='林俊杰';
-update studet set id=5 where name='陶喆';
-delete from studet;
+insert into student(id) values(1),(2),(3);
+insert into student(id,name,age,gender) values(1,'周杰伦',40,'男'),(2,'梁静茹',35,'女'),(3,'陶喆',49,'男');
+delete from student where age< 45;
+update student set id=4 where name='林俊杰';
+update student set id=5 where name='陶喆';
+delete from student;
+select name from student where age =49;
+
+select gender,avg(age),sum(age),min(age),max(age),count(*)from student group by gender;

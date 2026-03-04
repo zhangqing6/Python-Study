@@ -1,0 +1,28 @@
+from pyspark import SparkConf, SparkContext
+
+conf = SparkConf().setMaster("local[*]").setAppName("test_spark_app")
+# 创建SparkContext类对象
+sc = SparkContext(conf=conf)
+# 读取文件（保留file:///前缀）
+rdd = sc.textFile("file:///D:/python-learning/hello.txt")
+print(rdd.collect())
+sc.stop()
+#最主要是puspark版本与java版本要匹配，本代码pyspark:3.5.8,java:11.0.30
+
+
+# 打印pyspark版本
+# print(sc.version)
+# rdd=sc.parallelize([1,2,3,4,5])
+# def func(data):
+#     return data*10
+# rdd2=rdd.map(func)
+# print(rdd2.collect())
+# rdd2=sc.parallelize((1,2,3,4,5))
+# rdd3=sc.parallelize("abcdefg")
+# rdd4=sc.parallelize({1,2,3,4,5})
+# rdd5=sc.parallelize({"key1":"value1","key2":"value2","key3":"value3"})
+# print(rdd1.collect())
+# print(rdd2.collect())
+# print(rdd3.collect())
+# print(rdd4.collect())
+# print(rdd5.collect())

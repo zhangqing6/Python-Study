@@ -1,0 +1,32 @@
+# def outer(logo):
+#     def inner(msg):
+#         print(f"{logo}{msg}{logo}")
+#     return inner
+# fn1=outer("Hello")
+# fn1("World")
+# def outer(num1):
+#     def inner(num2):
+#   # num1要修改前面得加nonlocal
+#       nonlocal num1
+#       num1+=num2
+#       print(num1)
+#     return inner
+# fn=outer(10)
+# fn(5)
+# 简单实现ATM存取钱
+def account_creater(initial_amount=0):
+    def atm(num,deposit=True):
+        nonlocal initial_amount
+        if deposit:
+            initial_amount += num
+            print(f"存款:+{num},账户余额:{initial_amount}")
+        else:
+            initial_amount -= num
+            print(f"取款:-{num},账户余额:{initial_amount}")
+    return atm
+atm=account_creater()
+atm(100)
+atm(200)
+atm(200,False)
+
+

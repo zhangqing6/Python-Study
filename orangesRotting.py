@@ -7,7 +7,7 @@ class Solution(object):
         m, n = len(grid), len(grid[0])
         q = deque()
         fresh = 0
-        dirs = [(-1,0), (1,0), (0,-1), (0,1)]  # 上下左右
+        dirs = [(-1,0), (1,0), (0,-1), (0,1)]  # 左右上下
         
         # 初始化：统计新鲜橘子、存入腐烂橘子坐标
         for i in range(m):

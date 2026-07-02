@@ -14,7 +14,7 @@ class Solution(object):
         inorder_map = {val: idx for idx, val in enumerate(inorder)}
         
         def build(pre_left, pre_right, in_left, in_right):
-            # 递归终止条件：没有节点可以构造
+            # 递归终止条件：没有节点构造
             if pre_left > pre_right:
                 return None
             

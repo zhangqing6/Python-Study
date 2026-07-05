@@ -24,7 +24,7 @@ class Solution(object):
         root.left = None   # 左子树置空
         root.right = left  # 右指针指向原来的左子树
         
-        # 3. 找到现在右子树的最后一个节点，把原来的右子树接上去
+        # 3. 找到现右子树的最后一个节点，把原来的右子树接上去
         temp = root
         while temp.right:
             temp = temp.right

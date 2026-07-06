@@ -18,5 +18,5 @@ class Solution(object):
             if nums[i] != i + 1:
                 return i + 1
         
-        # 所有数都匹配，返回n+1
+        # 所有数都匹配后，返回n+1
         return n + 1

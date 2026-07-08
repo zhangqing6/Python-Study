@@ -24,7 +24,7 @@ class Solution(object):
             # 更新最大直径：当前节点的直径 = 左深度 + 右深度
             self.max_diameter = max(self.max_diameter, left_depth + right_depth)
             
-            # 返回当前节点的深度：max(左,右) + 1
+            # 返回当前节点深度：max(左,右) + 1
             return max(left_depth, right_depth) + 1
          # 调用递归函数
         depth(root)

@@ -15,7 +15,7 @@ class Solution(object):
             # 和超过目标，剪枝
             if total > target:
                 return
-            # 从start开始，允许重复取当前数字
+            # 从start开始，允许重复取当前数
             for i in range(start, len(candidates)):
                 num = candidates[i]
                 path.append(num)

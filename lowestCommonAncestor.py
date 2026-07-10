@@ -22,7 +22,7 @@ class Solution(object):
             # 左右各找到一个，当前就是公共祖先
             if left and right:
                 return node
-            # 哪边有结果返回哪边
+            # 哪边有结果就返回哪边
             return left if left else right
         
         return dfs(root)

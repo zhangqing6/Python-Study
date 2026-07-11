@@ -12,7 +12,7 @@ from langchain_core.output_parsers import StrOutputParser
 # 第二步：配置基础路径（按需修改）
 DOCS_DIR = "./docs"  # 本地文档文件夹路径
 CHROMA_DB_DIR = "./chroma_db"  # 向量数据库存储路径
-EMBEDDING_MODEL = "all-MiniLM-L6-v2"  # 轻量向量化模型（免费）
+EMBEDDING_MODEL = "all-MiniLM-L6-v2"  # 轻量向量化模型
 # 可选：若用本地大模型（需先安装Ollama并拉取模型），否则替换成OpenAI/文心一言API
 LLM_MODEL = "llama3"  # 本地模型（如llama3、qwen等）
 

@@ -9,7 +9,7 @@ from langchain_core.prompts import PromptTemplate
 from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
 
-# 第二步：配置基础路径（按需修改）
+# 第二步：配置基础路径
 DOCS_DIR = "./docs"  # 本地文档文件夹路径
 CHROMA_DB_DIR = "./chroma_db"  # 向量数据库存储路径
 EMBEDDING_MODEL = "all-MiniLM-L6-v2"  # 轻量向量化模型

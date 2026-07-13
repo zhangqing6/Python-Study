@@ -5,7 +5,7 @@ class Solution(object):
         :rtype: bool
         """
         total = sum(nums)
-        # 总和奇数，不可能平分
+        # 总和奇数，不可平分
         if total % 2 != 0:
             return False
         target = total // 2

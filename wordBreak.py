@@ -5,7 +5,7 @@ class Solution(object):
         :type wordDict: List[str]
         :rtype: bool
         """
-        word_set = set(wordDict)  # 转成集合，查询超快 O(1)
+        word_set = set(wordDict)  # 转成集合，查询快 O(1)
         n = len(s)
         dp = [False] * (n + 1)
         dp[0] = True  # 空字符串合法

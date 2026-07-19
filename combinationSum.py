@@ -8,7 +8,7 @@ class Solution(object):
         res = []
     
         def backtrack(start, path, total):
-            # 和等于目标，记录答案
+            # 和等于目标记录答案
             if total == target:
                 res.append(list(path))
                 return
